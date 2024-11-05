@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Upload Folder</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <div class="main-container">
+        <div class="card">
+            <!-- Logo Section with updated path -->
+            <div class="logo-container">
+                <img src="{{ url_for('static', filename='images/ramoslaw_icon.jpeg') }}" alt="Ramos Law Logo" class="logo">
+            </div>
+
+            <h1>Upload a Folder</h1>
+            <form id="upload-form" enctype="multipart/form-data" action="{{ url_for('upload_folder') }}" method="post">
+                <div id="drop-area" class="drop-area">
+                    <p>Drag and drop your folder here</p>
+                    <p>or</p>
+                    <label class="custom-file-upload">
+                        <input type="file" id="folder-input" name="folder-input" webkitdirectory multiple required>
+                        <span>Select Folder</span>
+                    </label>
+                </div>
+                <button type="submit">Process</button>
+                <div id="processing-message" class="hidden">
+                    <div class="spinner"></div>
+                    Processing data, please wait...
+                </div>
+            </form>
+            <div id="download-container" class="hidden">
+                <a id="download-link" href="#" class="btn">Download Excel File</a>
+            </div>
+        </div>
+        
+	<!-- Footer Section now inside the main-container -->
+        <div class="footer">
+            <p>Powered by Nebula Intelligence LLC</p>
+        </div>
+    </div>
+
+    <div id="success-modal" class="modal">
+        <div class="modal-content">
+            <span class="close-btn">&times;</span>
+            <p id="success-message">Your data has been successfully stored!</p>
+        </div>
+    </div>
+
+    <script src="{{ url_for('static', filename='script.js') }}"></script>
+</body>
+</html>
