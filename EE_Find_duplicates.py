@@ -4,6 +4,7 @@ import fitz  # PyMuPDF for PDF extraction
 from docx import Document
 import os
 import re
+import sys
 
 def extract_text_from_pdf(pdf_path):
     """Extracts text from a PDF file."""
@@ -125,5 +126,18 @@ def find_near_duplicates(base_folder, content_similarity_threshold=0.95, filenam
                 reported_pairs.add((file1, file2))
 
 # Example usage
-base_folder = r"C:\Users\MCayce\Documents\projects\scripts\testfolders"  # Replace with your actual base folder path
-find_near_duplicates(base_folder)
+#base_folder = r"C:\Users\MCayce\Documents\projects\scripts\testfolders"  # Replace with your actual base folder path
+
+def get_base_folder():
+    # get base folder path as cmd line arg
+    if len(sys.argv) > 1:
+        folder_path = sys.argv[1]
+        print(folder_path)
+        return folder_path
+    else:
+        print('no path provided')
+        return 1
+
+if __name__ == "__main__":
+    base_folder = get_base_folder()
+    find_near_duplicates(base_folder)

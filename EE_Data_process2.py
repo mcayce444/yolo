@@ -5,6 +5,7 @@ import fitz  # PyMuPDF
 import logging
 import hashlib
 from difflib import SequenceMatcher
+import sys
 
 # Set up logging to overwrite the file each time the script is run
 logging.basicConfig(filename='script_log.txt', level=logging.INFO,
@@ -156,9 +157,20 @@ def process_policy_pdfs(base_folder):
                 except Exception as e:
                        logging.error(f"Error processing PDF {file_path}: {e}")
 
+def get_base_folder():
+    if len(sys.argv) > 1:
+        folder_path = sys.argv[1]
+        print(folder_path)
+        return folder_path
+    else:
+        print('no path provided')
+        return 1
+
 if __name__ == "__main__":
     # Base folder path
-    base_folder = r"C:\Users\MCayce\Documents\projects\scripts\testfolders"  # Replace with your actual base folder path
+    #base_folder = r"C:\Users\MCayce\Documents\projects\scripts\testfolders"  # Replace with your actual base folder path
+    # get base folder as cmd line arg
+    base_folder = get_base_folder()
 
     # Subfolders to delete (add 'Liens', 'Costs', 'Photos', 'Requests', and any folder that starts with 'Intake')
     folders_to_delete = ["Liens", "Costs", "Photos", "Requests", "Invoices"]

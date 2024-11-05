@@ -1,0 +1,16 @@
+2024-11-05 13:36:50,909 - Deleted folder: testfolders\Alvarado, Noel - 286087\Intake & Authorization, Size: 3.61 MB
+2024-11-05 13:36:50,946 - Deleted folder: testfolders\Alvarado, Noel - 286087\Liens, Size: 3.99 MB
+2024-11-05 13:36:50,958 - Deleted folder: testfolders\Alvarado, Noel - 286087\Medical Records _ Bills\Invoices, Size: 0.37 MB
+2024-11-05 13:36:50,959 - Deleted folder: testfolders\Alvarado, Noel - 286087\Medical Records _ Bills\Requests, Size: 1.11 MB
+2024-11-05 13:36:50,959 - Deleted file: testfolders\Alvarado, Noel - 286087\Correspondence\UIM\2024.05.10 - UIM LOR - Progressive - FAX CONFIRMATION.pdf, Size: 0.12 MB
+2024-11-05 13:36:50,971 - Deleted file: testfolders\Alvarado, Noel - 286087\Correspondence\UIM\2024.05.10 - UIM LOR - Progressive.docx, Size: 0.06 MB
+2024-11-05 13:36:50,974 - Deleted file: testfolders\Alvarado, Noel - 286087\Correspondence\UIM\2024.05.10 - UIM LOR - Progressive.pdf, Size: 0.16 MB
+2024-11-05 13:36:50,977 - Deleted file: testfolders\Alvarado, Noel - 286087\Correspondence\UIM\2024.05.14 - Progressive Contact Request.pdf, Size: 0.45 MB
+2024-11-05 13:36:50,980 - Deleted file: testfolders\Alvarado, Noel - 286087\Investigation\2024.05.09 - Investigation Report - Noel Alvarado.pdf, Size: 2.16 MB
+2024-11-05 13:36:50,981 - Deleted file: testfolders\Alvarado, Noel - 286087\Medical Records _ Bills\Ambulance\Denver Health Paramedics bill.jpeg, Size: 0.18 MB
+2024-11-05 13:36:50,982 - Deleted file: testfolders\Alvarado, Noel - 286087\Medical Records _ Bills\ER\2024.04.15 - Lutheran Med Center billing.pdf, Size: 0.34 MB
+2024-11-05 13:36:50,984 - Deleted file: testfolders\Alvarado, Noel - 286087\Medical Records _ Bills\Imaging\2024.04.15 - RIA billing.pdf, Size: 0.06 MB
+2024-11-05 13:36:50,987 - Total pages deleted from PDFs: 0
+2024-11-05 13:36:50,988 - Estimated MB saved by truncating PDFs: 12.61 MB
+2024-11-05 13:36:50,988 - Total MB deleted (including files/folders): 12.61 MB
+2024-11-05 13:36:50,988 - Total number of files/folders modified: 12
