@@ -52,16 +52,10 @@ def process_folder():
     result_folder = os.path.join(folder_path, 'result_folder')
     os.makedirs(result_folder, exist_ok=True)
 
-    # Execute ee_process.py with the folder_path as an argument
-    try:
-        # Running ee_duplicate.py and saving output to result_folder
-        subprocess.run(['python', 'EE_Data_process2.py', folder_path, result_folder], check=True)
-    except subprocess.CalledProcessError as e:
-        return jsonify({'error': f'Error occurred while running ee_duplicate.py: {str(e)}'}), 500
-
     # Execute ee_duplicate.py with the folder_path as an argument
     try:
         # Running ee_duplicate.py and saving output to result_folder
+        subprocess.run(['python', 'EE_Data_process2.py', folder_path, result_folder], check=True)
         subprocess.run(['python', 'EE_Find_duplicates.py', result_folder, result_folder], check=True)
     except subprocess.CalledProcessError as e:
         return jsonify({'error': f'Error occurred while running ee_duplicate.py: {str(e)}'}), 500

@@ -1,0 +1,7 @@
+put files back into database?
+pull files from azure directly?
+
+flask:
+save folder in temp location
+execute scripts with folder as input
+return updated folder
