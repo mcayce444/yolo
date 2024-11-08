@@ -13,6 +13,10 @@ def upload_file():
     if 'folder-input' not in request.files:
         return "No folder input in the request", 400
     files = request.files.getlist('folder-input')
+    # process file
+    # call data_process
+    # call find duplicates
+
 
 
 @app.route('/return-folder')

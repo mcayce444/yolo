@@ -1,8 +1,8 @@
 from flask import Flask, request, jsonify, send_file, render_template
 import os
 from werkzeug.utils import secure_filename
-from flask_wtf import FlaskForm
-from wtforms import FileField, SubmitField
+#from flask_wtf import FlaskForm
+#from wtforms import FileField, SubmitField
 import subprocess
 import shutil
 
